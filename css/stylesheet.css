@@ -1,10 +1,15 @@
 @import url(;<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">);
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
 
 :root {
   --green: #C7DF99;
   --green-writings: #254A15;
   --green-button: #B8DE6F;
   --green-button-click: #9cc055;
+  --green-heroimage-btn: #BAEE56;
+  --green-heroimage-writings: #255E0D;
+  --green-introduction: #AED581;
+  --grey-introduction: #F1EFEF;
 }
 
 /* Tools */
@@ -21,6 +26,40 @@
     margin: 0px;
     padding: 0px;
     font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+navbar {
+  background-color:var(--green-button);
+  width: 100%;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  background-image: url('../asset/logobelajartaniid.png');
+  background-position: center;
+  background-size: cover;
+  width: 282.86px;
+  height: 60px;
+}
+
+.navbar-list {
+  position: relative;
+  display: flex;
+  list-style-type: none;
+}
+
+.navbar-list-item {
+  padding: 0 15px;
+  font-weight: 450;
+  font-size: 15pt;
+  color: var(--green-writings);
 }
 
 .login-bg {
@@ -114,3 +153,194 @@
 
 /* HOMEPAGE */
 
+.homepage-container {
+
+}
+
+.homepage-heroimage {
+  background-image: url("../asset/homepage-heroimage.png");
+  background-position: center;
+  background-size: cover;
+  height: 80vh;
+  width: 100%;
+}
+
+.homepage-heroimage-dim {
+  background-color:rgba(0,0,0,0.7);
+  height: 80vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage-heroimage-container {
+  margin-top: 15px;
+  text-align: center;
+  color: white;
+  font-size: 35pt;
+  line-height: 150%;
+}
+
+.homepage-heroimage-btn {
+  background-color: var(--green-heroimage-btn);
+  border: 1px solid grey;
+  border-radius: 10px;
+  color: var(--green-heroimage-writings);
+  font-size: 15pt;
+  font-weight: 600;
+  cursor: pointer;
+
+  margin-top: 30px;
+  padding: 20px 40px;
+}
+
+.homepage-heroimage-btn:hover{
+  background-color: var(--green-button-click);
+}
+
+.homepage-heroimage-btn:focus{
+  outline: none;
+}
+
+.homepage-heroimage-btn:active{
+  outline: none;
+}
+
+.homepage-intro-grey {
+  background-color: var(--grey-introduction);
+  width: 100%;
+  height: 40vh;
+  display: flex
+}
+
+.homepage-intro-green {
+  background-color: var(--green-introduction);
+  width: 100%;
+  height: 40vh;
+  display: flex;
+}
+
+.homepage-intro-writings > * {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.homepage-intro-writings {
+  margin: auto;
+  width: 70%;
+  text-align: center;
+
+}
+
+.homepage-intro-title {
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 30px;
+  font-size: 20pt;
+  font-weight: 500;
+}
+
+.homepage-intro-text {
+  font-size: 15pt;
+}
+
+.homepage-intro-img-container {
+  background-color: white;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid grey;
+}
+
+.homepage-intro-img1 {
+  border: 1px solid grey;
+  background-image: url('../asset/homepage-intro-1.jpg');
+  width: 90%;
+  height: 85%;
+}
+
+.homepage-intro-img2 {
+  border: 1px solid grey;
+  background-image: url('../asset/homepage-intro-2.jpg');
+  width: 90%;
+  height: 85%;
+}
+
+.homepage-intro-img3 {
+  border: 1px solid grey;
+  background-image: url('../asset/homepage-intro-3.jpg');
+  width: 90%;
+  height: 85%;
+}
+
+.homepage-about-us {
+  background-image: url('../asset/coba.jpg');
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 70vh;
+}
+
+.homepage-about-us-dim {
+  background-color:rgba(0,0,0,0.7);
+  height: 70vh;
+  width: 100%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage-about-us-container {
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 15pt;
+}
+
+.homepage-about-us-title {
+  text-align: center;
+  font-size: 25pt;
+  font-weight: 550;
+  margin-bottom: 40px;
+}
+
+
+.homepage-about-us-logo-sosmed-wa {
+  background-image: url('../asset/homepage-logo-wa.png');
+  background-position: center;
+  background-size: cover;
+  width: 7vh;
+  height: 7vh;
+}
+
+.homepage-about-us-logo-sosmed-line {
+  background-image: url('../asset/homepage-logo-line.png');
+  background-position: center;
+  background-size: cover;
+  width: 7vh;
+  height: 7vh;
+}
+
+.homepage-about-us-logo-sosmed-email {
+  background-image: url('../asset/homepage-logo-email.png');
+  background-position: center;
+  background-size: cover;
+  width: 7vh;
+  height: 7vh;
+}
+
+.homepage-about-us-sosmed {
+  display: flex;
+  align-items: center;
+  margin: 25px 0px 25px 90px ;
+}
+
+.give-span {
+  margin-left: 20px;
+}
+
+.homepage-about-us-text-sosmed {
+  margin-left: 20px;
+}
