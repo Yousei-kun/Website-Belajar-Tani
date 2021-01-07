@@ -1,0 +1,173 @@
+/* 992px : dekstop */
+/* 576px : mobile */
+
+@media screen and (max-width: 768px) {
+    /* navbar */
+    .navbar-menu-container {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-logo {
+        width: 198px;
+        height: 42px;
+    }
+
+    .navbar-menu {
+        background-image: url('../asset/menu_icon.png');
+        background-position: center;
+        background-size: cover;
+        height: 50px;
+        width: 50px;
+    }
+
+    .navbar-list-item {
+        font-size: 12pt;
+        padding: 12px 14px;
+    }
+
+    #navbar-mobile {
+        display: block;
+    }
+
+    #navbar1 {
+        display: none;
+    }
+
+    #navbar2 {
+        display: none;
+    }
+
+    #navbar3 {
+        display: none;
+    }
+
+    #navbar4 {
+        display: block;
+    }
+
+    /* leftsidebar */
+
+    .left-sidebar {
+        display: none;
+    }
+
+    .right-sidebar {
+        display: none;
+    }
+
+    /* login page */
+    .login-card {
+        width: 75%;
+    }
+
+    /* homepage */
+    .homepage-heroimage-container {
+        font-size: 20pt;
+    }
+
+    .homepage-heroimage-btn {
+        margin-top: 30pt;
+        font-size: 12pt;
+    }
+
+    .homepage-intro-img-container {
+        display: none;
+    }
+
+    .homepage-intro-writings {
+        text-align: left;
+    }
+
+    .homepage-about-us-title {
+        margin: 0 auto;
+        font-size: 17pt;
+        width: 90%;
+    }
+
+    .homepage-about-us-sosmed{
+        margin-left: 50px;
+    }
+
+    .homepage-about-us-logo-sosmed-wa {
+        width: 4vh;
+        height: 4vh;
+    }
+
+    .homepage-about-us-logo-sosmed-line {
+        width: 4vh;
+        height: 4vh;
+    }
+
+    .homepage-about-us-logo-sosmed-email {
+        width: 4vh;
+        height: 4vh;
+    }
+
+    .homepage-about-us-text-sosmed {
+        font-size: 12pt;
+    }
+
+    /* diskusi & cara bertani */
+
+    .container {
+        padding-top: 50px;
+    }
+
+    .main-container {
+        padding:0;
+        width: 100%;
+        padding: 15px 30px;
+        padding-bottom:50px;
+    }
+
+    /* diskusi */
+
+    .search_bar {
+        width:50%;
+    }
+
+    .button {
+        font-size: 9pt;
+        width: 42%;
+        height: 40px;
+    }
+
+    .forum-diskusi-header {
+        font-size: 15pt;
+    }
+
+    #foto-diskusi{
+        width: 50px;
+    }
+
+    .divider {
+        display: none;
+    }
+
+    .card_profile {
+        display: inline-block;
+    }
+
+    .card_desc {
+        display:block;
+        width: 100%;
+        margin-top: 10px;
+        margin-left: 10px;
+        font-size: 10pt;
+    }
+
+    .comment img {
+        display: none;
+    }
+    
+    .comment_body {
+        width: 80%;
+    }
+}
+
+
+
+
+
+

@@ -6,18 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forum Diskusi</title>
     <link rel="stylesheet" href="css/stylesheet.css">
+    <link rel="stylesheet" href="css/mobile.css">
 </head>
 
 <body>
-        <navbar>
-            <div class="navbar-logo"></div>
-            <ul class="navbar-list">
-                <a href="cara-bertani.html"><li class="navbar-list-item"> Cara Bertani </li></a>
-                <a href="forum-diskusi.html"><li class="navbar-list-item"> Diskusi </li></a>
-                <a href="home-page.html"><li class="navbar-list-item"> Tentang Kami </li></a>
-                <a href="login-page.html"><li class="navbar-list-item"> Login </li></a>
-            </ul>
-        </navbar>
+    
+    <navbar>
+        <div class="navbar-menu-container"> <!--untuk responsive mobile -->
+            <div class="navbar-menu"></div>
+            <div class="navbar-logo"></div> <!-- menu mobile -->
+        </div>
+
+        <ul class="navbar-list">
+            <a href="cara-bertani.html"><li class="navbar-list-item" id="navbar-mobile"> Menu </li></a>
+            <a href="cara-bertani.html"><li class="navbar-list-item" id="navbar1"> Cara Bertani </li></a>
+            <a href="forum-diskusi.html"><li class="navbar-list-item" id="navbar2"> Diskusi </li></a>
+            <a href="home-page.html"><li class="navbar-list-item" id="navbar3"> Tentang Kami </li></a>
+            <a href="login-page.html"><li class="navbar-list-item" id="navbar4"> Login </li></a>
+        </ul>
+    </navbar>
+
     <div class="container">
         <div class="left-sidebar">
             <h2 class="mb-10">DAFTAR ISI</h2>
@@ -77,25 +85,25 @@
             <div class="main-head">
                 <div class="search_bar">
                     <input type="text" id="searchInput" name="search" id=""
-                        placeholder="Cari diskusi yang anda mau di sini...">
+                        placeholder="Cari diskusi disini...">
                 </div>
                 <div class="button">Tambah Topik Baru</div>
             </div>
-            <h2>Forum Diskusi BelajarTani.id</h2>
+            <h2 class="forum-diskusi-header">Forum Diskusi BelajarTani.id</h2>
             <div class="card">
                 <div class="card_head">
+                    <img src="asset/fotoivan.png" width="100" id="foto-diskusi" alt="">
                     <div class="card_profile">
-                        <img src="asset/fotoivan.png" width="100" alt="">
                         <div class="card_profile_detail">
                             <a style="color: #069A28;"><strong>Ivan Budianto</strong></a>
-                            <a>09 Oktober 2020, 19:00</a>
+                            <a class="text_date">09 Oktober 2020, 19:00</a>
                         </div>
-                    </div>
-                    <div class="divider"></div>
-                    <div class="card_desc">
-                        <p>Bagaimana cara memilih peralatan yang sesuai dengan lahan yang dimiliki?</p>
-                        <br>
-                        <p>Tanah lahanku adalah tanah gambut, bagaimana menyiasatinya agar tetap berfungsi maksimal?</p>
+                        <div class="divider"></div>
+                        <div class="card_desc">
+                            <p>Bagaimana cara memilih peralatan yang sesuai dengan lahan yang dimiliki?</p>
+                            <br>
+                            <p>Tanah lahanku adalah tanah gambut, bagaimana menyiasatinya agar tetap berfungsi maksimal?</p>
+                        </div>
                     </div>
                 </div>
                 <div class="card_body">

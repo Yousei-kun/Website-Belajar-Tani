@@ -9,6 +9,7 @@
   --green-heroimage-btn: #BAEE56;
   --green-heroimage-writings: #255E0D;
   --green-introduction: #AED581;
+  --green-hover: #61b15a;
   --grey-introduction: #F1EFEF;
 }
 
@@ -67,11 +68,19 @@ navbar {
   list-style-type: none;
 }
 
+#navbar-mobile {
+  display: none;
+}
+
 .navbar-list-item {
   padding: 0 15px;
   font-weight: 450;
   font-size: 15pt;
   color: var(--green-writings);
+  padding: 20px 12px;
+}
+.navbar-list-item:hover {
+  background-color: var(--green-hover);
 }
 
 .login-bg {
@@ -219,15 +228,15 @@ navbar {
 
 .homepage-intro-grey {
   background-color: var(--grey-introduction);
+  padding: 60px 0px;
   width: 100%;
-  height: 40vh;
   display: flex
 }
 
 .homepage-intro-green {
   background-color: var(--green-introduction);
+  padding: 60px 0px;
   width: 100%;
-  height: 40vh;
   display: flex;
 }
 
@@ -262,6 +271,17 @@ navbar {
   border: 1px solid grey;
 }
 
+.homepage-new-image {
+  width: 90%;
+  height: 85%;
+}
+
+.homepage-new-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .homepage-intro-img1 {
   border: 1px solid grey;
   background-image: url('../asset/homepage-intro-1.jpg');
@@ -284,7 +304,7 @@ navbar {
 }
 
 .homepage-about-us {
-  background-image: url('../asset/coba.jpg');
+  
   background-position: center;
   background-size: cover;
   width: 100%;
@@ -383,7 +403,7 @@ navbar {
 .main-container {
   width: 50%;
   background-color: #F0F2F5;
-  padding: 10px 70px;
+  padding: 30px 70px;
 }
 
 .main-container h2, .main-container h3 {
@@ -414,6 +434,10 @@ h2 {
 .breadcumbs img {
   object-fit: scale-down;
   width: 30px;
+}
+
+.cara-bertani-text {
+  text-align: justify;
 }
 
 section img {
@@ -459,7 +483,7 @@ section p {
   align-items: center;
   justify-content: center;
   font-family: 'Montserrat', sans-serif;
-  color: var(--green-writings); 
+  color: var(--green-writings);
   background-color: var(--green-button);
   height: 40px;
   border-radius: 10px;
@@ -510,20 +534,26 @@ section p {
 .card_profile {
   display: flex;
   flex-direction: row;
-  width: 47%;
+  justify-content: space-between;
   font-family: 'PT Sans', sans-serif;
-  font-size: 12px;
+  font-size: 14px;
 }
 
-.card_profile img {
+.card_head img {
   object-fit: contain;
+  margin-left:10px;
 }
 
 .card_profile_detail {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-left: 30px;
+  margin-left: 10px;
+  
+}
+
+.text_date {
+  font-weight: 600;
 }
 
 .card_desc {
@@ -531,8 +561,8 @@ section p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 47%;
-  font-size: 12px;
+  width: 60%;
+  font-size: 14px;
 }
 
 .card_desc p {
@@ -548,13 +578,12 @@ section p {
 .comment {
   display: flex;
   width: 80%;
-  justify-content: space-between;
   align-items: center;
   margin-bottom: 10px;
 }
 
 .comment_body {
-  font-size: 10px;
+  font-size: 14px;
   width: 60%;
   background-color: var(--grey-introduction);
   padding: 15px;
@@ -562,22 +591,25 @@ section p {
 }
 
 .comment_name {
-  color: var(--green-introduction);
-  font-family: 'PT Sans', sans-serif;
-}
-
-.comment_date {
-  color: var(--green-writings);
-  margin-bottom: 10px;
-  font-family: 'PT Sans', sans-serif;
-}
-
-.comment_body {
+  color: #069A28;
+  font-size: 14px;
   font-family: 'PT Sans', sans-serif;
   font-weight: bold;
 }
 
+.comment_date {
+  margin-bottom: 10px;
+  font-family: 'PT Sans', sans-serif;
+  font-weight: 600;
+}
+
+.comment_body {
+  font-family: 'PT Sans', sans-serif;
+  
+}
+
 .comment_bar {
+  margin-top: 20px;
   display: flex;
   width: 75%;
   justify-content: space-around;
@@ -619,3 +651,5 @@ section p {
 .card a {
   font-family: 'PT Sans', sans-serif;
 }
+
+
