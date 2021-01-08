@@ -16,11 +16,23 @@
         </div>
 
         <ul class="navbar-list">
-            <a href="cara-bertani.html"><li class="navbar-list-item" id="navbar-mobile"> Menu </li></a>
+            <div class="dropdown-menu">
+                <button class="navbar-list-item dropBtn" id="navbar-mobile" onclick="showMenuDropdown()"> Menu </button>
+                <div class="dropItem">
+                    <a href="cara-bertani.html"><li class="navbar-list-item"> Cara Bertani </li></a>
+                    <a href="forum-diskusi.html"><li class="navbar-list-item"> Diskusi </li></a>
+                    <a href="home-page.html"><li class="navbar-list-item"> Tentang Kami </li></a>        
+                </div>
+            </div>
             <a href="cara-bertani.html"><li class="navbar-list-item" id="navbar1"> Cara Bertani </li></a>
             <a href="forum-diskusi.html"><li class="navbar-list-item" id="navbar2"> Diskusi </li></a>
             <a href="home-page.html"><li class="navbar-list-item" id="navbar3"> Tentang Kami </li></a>
-            <a href="login-page.html"><li class="navbar-list-item" id="navbar4"> Login </li></a>
+            <div class="dropdown-menu">
+                <button class="navbar-list-item dropBtn" id="navbar4" onclick="userDropdown()">User</button>
+                <div class="dropItem">
+                    <a href="login-page.html" class="navbar-list-item">Logout</a>
+                </div>
+            </div>
         </ul>
     </navbar>
 
@@ -184,5 +196,6 @@
 
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
