@@ -17,11 +17,25 @@
             </div>
 
             <ul class="navbar-list">
-                <a href="cara-bertani.html"><li class="navbar-list-item" id="navbar-mobile"> Menu </li></a>
+                <div class="dropdown-menu">
+                    <!-- <a href="cara-bertani.html"></a><li class="navbar-list-item" id="navbar-mobile"> Menu </li></a> -->
+                    <button class="navbar-list-item dropBtn" id="navbar-mobile" onclick="showMenuDropdown()"> Menu </button>
+                    <div class="dropItem">
+                        <a href="cara-bertani.html"><li class="navbar-list-item"> Cara Bertani </li></a>
+                        <a href="forum-diskusi.html"><li class="navbar-list-item"> Diskusi </li></a>
+                        <a href="home-page.html"><li class="navbar-list-item"> Tentang Kami </li></a>        
+                    </div>
+                </div>
                 <a href="cara-bertani.html"><li class="navbar-list-item" id="navbar1"> Cara Bertani </li></a>
                 <a href="forum-diskusi.html"><li class="navbar-list-item" id="navbar2"> Diskusi </li></a>
                 <a href="home-page.html"><li class="navbar-list-item" id="navbar3"> Tentang Kami </li></a>
-                <a href="login-page.html"><li class="navbar-list-item" id="navbar4"> Login </li></a>
+                <!-- <a href="login-page.html"><li class="navbar-list-item" id="navbar4"> Login </li></a> -->
+                <div class="dropdown-menu">
+                    <button class="navbar-list-item dropBtn" id="navbar4" onclick="userDropdown()">User</button>
+                    <div class="dropItem">
+                        <a href="login-page.html" class="navbar-list-item">Logout</a>
+                    </div>
+                </div>
             </ul>
         </navbar>
 
@@ -118,13 +132,23 @@
 
     </div>
     <script>
-        let welcomeText = document.querySelector(".homepage-heroimage-writings")
+        let userMenu = document.querySelector("#navbar4")
         let username = sessionStorage.getItem("username")
 
         // membuat username menjadi title case
         username = username.replace(/\b\w/g, l => l.toUpperCase())
-        welcomeText.innerHTML = `Hai ${username}<br>Pelajari cara bertani modern <br>dengan BelajarTani.id`
+        userMenu.innerText = `${username}`
+
+        function showMenuDropdown() {
+            let dropdown = document.querySelector(".dropItem")
+            dropdown.classList.toggle("show")
+        }
+
+        function userDropdown() {
+            let dropdown = document.querySelectorAll(".dropItem")[1]
+            dropdown.classList.toggle("show")
+        }
+
     </script>
 </body>
-
 </html>

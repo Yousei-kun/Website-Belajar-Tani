@@ -44,6 +44,7 @@
 
     #navbar4 {
         display: block;
+        margin-right: 20px;
     }
 
     /* leftsidebar */
@@ -164,6 +165,8 @@
     .comment_body {
         width: 80%;
     }
+
+
 }
 
 
