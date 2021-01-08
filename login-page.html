@@ -24,7 +24,7 @@
                             <div class="login-form-data"> <label class="fs-15"> Kata Sandi </label> <br>
                                 <input type='password' class="login-form-control" placeholder="Password" required>
                             </div>
-                                <a href="home-page.html"><input type='button' class="login-btn-form" value="Masuk"></a>
+                                <input type='button' onclick="login()" class="login-btn-form" value="Masuk">
 
                                 <a href="register-page.html"><input type='button' class="login-btn-form" value="Daftar"></a>
                             </div>
@@ -35,6 +35,13 @@
         </div>
     </div>
 </body>
+<script>
+    function login() {
+        let username = document.querySelector("input").value
+        sessionStorage.setItem("username", username)
+        window.location.href = "home-page.html"
+    }
+</script>
 
 </html>
 

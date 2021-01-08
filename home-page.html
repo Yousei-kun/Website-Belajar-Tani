@@ -117,6 +117,14 @@
         </div>
 
     </div>
+    <script>
+        let welcomeText = document.querySelector(".homepage-heroimage-writings")
+        let username = sessionStorage.getItem("username")
+
+        // membuat username menjadi title case
+        username = username.replace(/\b\w/g, l => l.toUpperCase())
+        welcomeText.innerHTML = `Hai ${username}<br>Pelajari cara bertani modern <br>dengan BelajarTani.id`
+    </script>
 </body>
 
 </html>
