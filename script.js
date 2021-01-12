@@ -15,3 +15,10 @@ function userDropdown() {
     let dropdown = document.querySelectorAll(".dropItem")[1]
     dropdown.classList.toggle("show")
 }
+
+
+function showSidebarDropdown() {
+    let dropdown = document.getElementById("test");
+    dropdown.classList.toggle("show")
+    console.log(dropdown);
+}

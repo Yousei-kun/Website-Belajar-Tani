@@ -3,6 +3,10 @@
 
 @media screen and (max-width: 768px) {
     /* navbar */
+    navbar {
+        z-index : 10;
+    }
+
     .navbar-menu-container {
         display: flex;
         align-items: center;
@@ -51,6 +55,20 @@
 
     .left-sidebar {
         display: none;
+        font-size: 10pt;
+        box-sizing: border-box;
+        width: 75%;
+        max-width: 60%;
+        background-color: #f1f1f1;
+        padding: 20px 20px 40px 20px;
+        position: absolute;
+        box-shadow: 10px 10px 5px rgba(0,0,0,0.2);
+        margin-bottom: 10px;
+      }
+
+    .left-sidebar.show {
+        display: block;
+        
     }
 
     .right-sidebar {
