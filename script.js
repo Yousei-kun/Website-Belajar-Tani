@@ -18,7 +18,7 @@ function userDropdown() {
 
 
 function showSidebarDropdown() {
-    let dropdown = document.getElementById("test");
+    let dropdown = document.getElementById("left-sidebar-ready");
     dropdown.classList.toggle("show")
     console.log(dropdown);
 }

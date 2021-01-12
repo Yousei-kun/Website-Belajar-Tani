@@ -41,8 +41,19 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+@media screen and (min-width: 1000px) {
+  .none {
+    display: none;
+  }
+}
+
 a {
   text-decoration: none;
+}
+
+.vanilla-text {
+  text-decoration: none;
+  color:black;
 }
 
 navbar {
