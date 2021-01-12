@@ -19,16 +19,16 @@
                     <div class="login-card-body">
                         <form>
                             <div class="login-form-data" style="margin-top:0 !important;"> <label class="fs-15"> Nama Pengguna </label> <br>
-                                <input type='text' class="login-form-control" placeholder="Nama Pengguna" required>
+                                <input type='text' class="login-form-control" id="username" placeholder="Nama Pengguna" required>
                             </div>
                             <div class="login-form-data"> <label class="fs-15"> Kata Sandi </label> <br>
-                                <input type='password' class="login-form-control" placeholder="Password" required>
+                                <input type='password' class="login-form-control" id="password" placeholder="Password" required>
                             </div>
                             <div class="login-form-data"> <label class="fs-15"> Konfirmasi Kata Sandi </label> <br>
-                                <input type='password' class="login-form-control" placeholder="Konfirmasi Password" required>
+                                <input type='password' class="login-form-control" id="password_confirm" placeholder="Konfirmasi Password" required>
                             </div>
                             <div class="login-form-data"> 
-                                <a href="home-page.html"><input type='button' class="login-btn-form" value="Daftar"></a>
+                                <input type='button' onclick="login()" class="login-btn-form" value="Daftar">
                             </div>
                         </form>
                     </div>
@@ -36,7 +36,35 @@
             </div>
         </div>
     </div>
+    <script>
+
+        function login() {
+            let username = document.getElementById("username").value;
+            let password = document.getElementById("password").value;
+            let password_confirm = document.getElementById("password_confirm").value;
     
+            if (username.length > 8) {
+                alert("Username maksimal 8 karakter.")
+            }
+
+            else if ((username.length != 0 && password.length !=0 ) && (password == password_confirm))  {
+                sessionStorage.setItem("username", username);
+                window.location.href = "home-page.html";
+            }
+
+            else if (password != password_confirm) {
+                event.stopPropagation;
+                alert("Kolom password dan konfirmasi password tidak sama.");
+            }
+
+            else {
+                event.stopPropagation;
+                alert("Kolom username dan password tidak boleh kosong.");
+            }
+            
+        }
+    
+    </script>
 </body>
 </html>
 
